@@ -8,6 +8,13 @@ This is a Vite React project with Tailwind CSS v4 for styling. The project uses:
 - Vite 7.0.3
 - Tailwind CSS v4.1.11 with the new @tailwindcss/vite plugin
 - PostCSS with autoprefixer
+- Use of TypeScript for type safety
+- ESLint for code linting
+- Prettier for code formatting
+- Vitest for unit testing
+- Tanstack Router for routing
+- Tanstack Query and Axios for data fetching
+- Portuguese language texts
 
 ## Coding Guidelines
 - Use modern React patterns with hooks
@@ -21,3 +28,7 @@ This is a Vite React project with Tailwind CSS v4 for styling. The project uses:
 - Uses the new `@tailwindcss/vite` plugin for Vite integration
 - CSS imports use `@import "tailwindcss";` instead of the old directive syntax
 - Configuration is handled through the `tailwind.config.js` file
+
+## Project Content Outline
+
+It's a driving school hotpage
