@@ -1,4 +1,5 @@
 import { SocialMedia } from "./SocialMedia"
+import { Footer } from "./Footer"
 
 function App() {
   return (
@@ -83,12 +84,7 @@ function App() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 py-4">
-        <div className="text-center text-sm text-gray-600">
-          © {new Date().getFullYear()} Autoescola Lucky. Todos os direitos reservados.
-        </div>
-      </footer>
+      <Footer/>
     </div>
   )
 }
