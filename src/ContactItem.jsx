@@ -4,7 +4,7 @@ function ContactItem({ icon, iconBgColor, children }) {
       <div className={`w-8 h-8 ${iconBgColor} rounded-full flex items-center justify-center`}>
         {icon}
       </div>
-      <div>
+      <div className="flex flex-col justify-center text-left">
         {children}
       </div>
     </div>
