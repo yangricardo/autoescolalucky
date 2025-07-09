@@ -23,8 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-# Lock files
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-lerna-lock.json
+# # Lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# lerna-lock.json
