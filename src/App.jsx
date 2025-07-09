@@ -12,7 +12,7 @@ function App() {
             <img 
               src="/logo.jpeg" 
               alt="Autoescola Lucky" 
-              className="mx-auto w-32 h-32 md:w-60 md:h-60 object-contain rounded-full shadow-lg border-4 border-blue-900"
+              className="mx-auto w-60 h-60 object-contain rounded-full shadow-lg border-4 border-blue-900"
             />
             <h1 className="mt-4 text-2xl md:text-3xl font-bold text-gray-800">
               Autoescola Lucky
