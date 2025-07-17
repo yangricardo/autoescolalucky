@@ -4,7 +4,7 @@ import { ContactItem } from './ContactItem';
 
 function App() {
   return (
-    <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col'>
+    <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col select-none'>
       {/* Main Content */}
       <div className='flex-1 flex items-center justify-center px-4 py-8'>
         <div className='max-w-md w-full text-center space-y-8'>
@@ -42,7 +42,7 @@ function App() {
                 }
               >
                 <p className='text-sm text-gray-600'>Telefone</p>
-                <p className='font-medium text-gray-800'>(21) 96409-7010</p>
+                <a href='https://wa.me/5521964097010' className='font-medium text-gray-800 hover:text-blue-600 transition-colors'>(21) 96409-7010</a>
               </ContactItem>
 
               <ContactItem 
@@ -59,9 +59,12 @@ function App() {
                 }
               >
                 <p className='text-sm text-gray-600'>E-mail</p>
-                <p className='font-medium text-gray-800'>
-                  autoescolalucky@gmail.com
-                </p>
+                <a 
+                  href='mailto:contato@autoescolalucky.com.br'
+                  className='font-medium text-gray-800 hover:text-blue-600 transition-colors'
+                >
+                  contato@autoescolalucky.com.br
+                </a>
               </ContactItem>
 
               <ContactItem 
@@ -81,9 +84,21 @@ function App() {
                 }
               >
                 <p className='text-sm text-gray-600'>Endereço</p>
-                <p className='font-medium text-gray-800'>
-                  Rua Iriguaçu, 35. Bangu - Rio de Janeiro, RJ
-                </p>
+                <div className='mt-2 flex flex-col space-y-2'>                  
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.0904757766475!2d-43.46839203804269!3d-22.873115936584185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdf92c7152b55%3A0xbc908783ba0548e2!2sAUTO%20ESCOLA%20LUCKY!5e0!3m2!1spt-BR!2sbr!4v1752721467121!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    height="200"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className='rounded-md mt-2'
+                  ></iframe>
+                  <p className='font-medium text-gray-800'>
+                    Rua Iriguaçu, 35. Bangu - Rio de Janeiro, RJ
+                  </p>                
+                </div>
               </ContactItem>
 
               <ContactItem 
