@@ -11,7 +11,7 @@ function App() {
           {/* Logo Section */}
           <div className='mb-8'>
             <img
-              src='/logo.jpeg'
+              src='/logo.webp'
               alt='Autoescola Lucky'
               className='mx-auto w-60 h-60 object-contain rounded-full shadow-lg border-4 border-blue-900'
             />
@@ -85,7 +85,7 @@ function App() {
               >
                 <p className='text-sm text-gray-600'>Endereço</p>
                 <div className='mt-2 flex flex-col space-y-2'>                  
-                  {/* <iframe
+                  <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.0904757766475!2d-43.46839203804269!3d-22.873115936584185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdf92c7152b55%3A0xbc908783ba0548e2!2sAUTO%20ESCOLA%20LUCKY!5e0!3m2!1spt-BR!2sbr!4v1752721467121!5m2!1spt-BR!2sbr"
                     width="100%"
                     height="200"
@@ -94,7 +94,7 @@ function App() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className='rounded-md mt-2'
-                  ></iframe> */}
+                  ></iframe>
                   <p className='font-medium text-gray-800'>
                     Rua Iriguaçu, 35. Bangu - Rio de Janeiro, RJ
                   </p>                
