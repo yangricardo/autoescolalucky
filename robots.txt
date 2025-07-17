@@ -1,9 +1,6 @@
-# Robots.txt for Autoescola Lucky
 User-agent: *
 Allow: /
 
-# Sitemap location
 Sitemap: https://autoescolalucky.com.br/sitemap.xml
 
-# Crawl-delay for respectful crawling
 Crawl-delay: 1
