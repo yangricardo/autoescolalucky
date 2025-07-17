@@ -1,27 +1,37 @@
 import { SocialMedia } from './SocialMedia';
 import { Footer } from './Footer';
 import { ContactItem } from './ContactItem';
+import { SEOHead } from './SEOHead';
+import { trackWhatsAppClick } from './analytics';
 
 function App() {
+  const handleWhatsAppClick = (phoneNumber) => {
+    trackWhatsAppClick(phoneNumber);
+  };
   return (
-    <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col select-none'>
-      {/* Main Content */}
-      <div className='flex-1 flex items-center justify-center px-4 py-4'>
-        <div className='max-w-md w-full text-center space-y-4'>
-          {/* Logo Section */}
-          <div className='mb-6 flex-col space-y-4'>
-            <img
-              src='/logo.webp'
-              alt='Autoescola Lucky'
-              className='mx-auto w-60 h-60 object-contain rounded-full shadow-lg shadow-amber-100 border-4 border-blue-900'
-            />
-            <p className='mt-2 font-bold text-gray-600'>
-              Sua carteira de motorista com segurança e confiança
-            </p>
-          </div>
+    <>
+      <SEOHead />
+      <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col select-none'>
+        {/* Main Content */}
+        <main className='flex-1 flex items-center justify-center px-4 py-4'>
+          <div className='max-w-md w-full text-center space-y-4'>
+            {/* Logo Section */}
+            <header className='mb-6 flex-col space-y-4'>
+              <img
+                src='/logo.webp'
+                alt='Autoescola Lucky - Logo da autoescola em Bangu, Rio de Janeiro'
+                className='mx-auto w-60 h-60 object-contain rounded-full shadow-lg shadow-amber-100 border-4 border-blue-900'
+                width="240"
+                height="240"
+                loading="eager"
+              />
+              <h1 className='mt-2 font-bold text-gray-600 text-lg'>
+                Sua carteira de motorista com segurança e confiança
+              </h1>
+            </header>
 
-          {/* Contact Section */}
-          <div className='bg-white rounded-lg shadow-md shadow-amber-50 p-6 space-y-4'>
+            {/* Contact Section */}
+            <section className='bg-white rounded-lg shadow-md shadow-amber-50 p-6 space-y-4'>
             <h2 className='text-xl font-semibold text-gray-800 mb-4'>
               Entre em Contato
             </h2>
@@ -37,10 +47,22 @@ function App() {
                 <p className='text-sm text-gray-600'>Telefone</p>
                 <div className='mt-2 flex flex-row space-x-4 justify-between w-full'>
                   <div>
-                    <a href='https://wa.me/5521964097010' className='font-medium text-gray-800 hover:text-blue-600 transition-colors'>(21) 96409-7010</a>
+                    <a 
+                      href='https://wa.me/5521964097010' 
+                      className='font-medium text-gray-800 hover:text-blue-600 transition-colors'
+                      onClick={() => handleWhatsAppClick('5521964097010')}
+                    >
+                      (21) 96409-7010
+                    </a>
                   </div>
                   <div>
-                      <a href='https://wa.me/5521964694925' className='font-medium text-gray-800 hover:text-blue-600 transition-colors'>(21) 96469-4925</a>
+                      <a 
+                        href='https://wa.me/5521964694925' 
+                        className='font-medium text-gray-800 hover:text-blue-600 transition-colors'
+                        onClick={() => handleWhatsAppClick('5521964694925')}
+                      >
+                        (21) 96469-4925
+                      </a>
                   </div>
                 </div>
               </ContactItem>
@@ -102,6 +124,7 @@ function App() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className='rounded-md mt-2'
+                    title="Localização da Autoescola Lucky no Google Maps"
                   ></iframe>
                   <a href='https://maps.google.com/maps?ll=-22.873093,-43.465822&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=13587509075608160482' className='font-medium text-gray-800 hover:text-blue-600 transition-colors'>
                     Rua Iriguaçu, 35. Bangu - Rio de Janeiro, RJ
@@ -131,15 +154,17 @@ function App() {
                 </div>
               </ContactItem>
             </div>
+
             <div className='mt-6 pt-4 border-t border-gray-200'>
               <SocialMedia />
             </div>
+            </section>
           </div>
-        </div>
-      </div>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 
