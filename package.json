@@ -1,16 +1,26 @@
 {
   "name": "autoescolalucky",
+  "description": "Autoescola Lucky - Website oficial da autoescola em Bangu, Rio de Janeiro",
+  "keywords": ["autoescola", "CNH", "carteira de motorista", "aulas de direção", "Bangu", "Rio de Janeiro"],
+  "author": "Autoescola Lucky",
+  "homepage": "https://autoescolalucky.com.br/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangricardo/autoescolalucky.git"
+  },
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:seo": "./build.sh",
     "start": "npx serve dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "sitemap:update": "echo 'Updating sitemap...' && sed -i \"s/<lastmod>.*<\\/lastmod>/<lastmod>$(date +%Y-%m-%d)<\\/lastmod>/\" public/sitemap.xml"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
@@ -31,6 +41,8 @@
     "globals": "^16.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
-    "vite": "^7.0.5"
+    "vite": "^7.0.5",
+    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-sitemap": "^0.8.2"
   }
 }
