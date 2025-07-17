@@ -6,14 +6,14 @@ function App() {
   return (
     <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col select-none'>
       {/* Main Content */}
-      <div className='flex-1 flex items-center justify-center px-4 py-8'>
-        <div className='max-w-md w-full text-center space-y-8'>
+      <div className='flex-1 flex items-center justify-center px-4 py-4'>
+        <div className='max-w-md w-full text-center space-y-4'>
           {/* Logo Section */}
-          <div className='mb-8 flex-col space-y-4'>
+          <div className='mb-6 flex-col space-y-4'>
             <img
               src='/logo.webp'
               alt='Autoescola Lucky'
-              className='mx-auto w-60 h-60 object-contain rounded-full shadow-lg border-4 border-blue-900'
+              className='mx-auto w-60 h-60 object-contain rounded-full shadow-lg shadow-amber-100 border-4 border-blue-900'
             />
             <p className='mt-2 font-bold text-gray-600'>
               Sua carteira de motorista com segurança e confiança
@@ -21,7 +21,7 @@ function App() {
           </div>
 
           {/* Contact Section */}
-          <div className='bg-white rounded-lg shadow-md p-6 space-y-4'>
+          <div className='bg-white rounded-lg shadow-md shadow-amber-50 p-6 space-y-4'>
             <h2 className='text-xl font-semibold text-gray-800 mb-4'>
               Entre em Contato
             </h2>
@@ -103,9 +103,9 @@ function App() {
                     referrerPolicy="no-referrer-when-downgrade"
                     className='rounded-md mt-2'
                   ></iframe>
-                  <p className='font-medium text-gray-800'>
+                  <a href='https://maps.google.com/maps?ll=-22.873093,-43.465822&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=13587509075608160482' className='font-medium text-gray-800 hover:text-blue-600 transition-colors'>
                     Rua Iriguaçu, 35. Bangu - Rio de Janeiro, RJ
-                  </p>                
+                  </a>                
                 </div>
               </ContactItem>
 
