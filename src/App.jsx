@@ -51,6 +51,7 @@ function App() {
                       href='https://wa.me/5521964097010' 
                       className='font-medium text-gray-800 hover:text-blue-600 transition-colors'
                       onClick={() => handleWhatsAppClick('5521964097010')}
+                      aria-label='WhatsApp (21) 96409-7010'
                     >
                       (21) 96409-7010
                     </a>
@@ -60,6 +61,7 @@ function App() {
                         href='https://wa.me/5521964694925' 
                         className='font-medium text-gray-800 hover:text-blue-600 transition-colors'
                         onClick={() => handleWhatsAppClick('5521964694925')}
+                        aria-label='WhatsApp (21) 96469-4925'
                       >
                         (21) 96469-4925
                       </a>
@@ -85,6 +87,7 @@ function App() {
                 <a 
                   href='mailto:contato@autoescolalucky.com.br'
                   className='font-medium text-gray-800 hover:text-blue-600 transition-colors'
+                  aria-label='Enviar email para contato@autoescolalucky.com.br'
                 >
                   contato@autoescolalucky.com.br
                 </a>
@@ -126,7 +129,7 @@ function App() {
                     className='rounded-md mt-2'
                     title="Localização da Autoescola Lucky no Google Maps"
                   ></iframe>
-                  <a href='https://maps.google.com/maps?ll=-22.873093,-43.465822&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=13587509075608160482' className='font-medium text-gray-800 hover:text-blue-600 transition-colors'>
+                  <a href='https://maps.google.com/maps?ll=-22.873093,-43.465822&z=15&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=13587509075608160482' className='font-medium text-gray-800 hover:text-blue-600 transition-colors' aria-label='Ver endereço no Google Maps: Rua Iriguaçu, 35. Bangu - Rio de Janeiro, RJ'>
                     Rua Iriguaçu, 35. Bangu - Rio de Janeiro, RJ
                   </a>                
                 </div>
