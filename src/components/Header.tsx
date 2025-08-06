@@ -7,7 +7,7 @@ export const Header = () =>
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-yellow-300 shadow-md sticky top-0 z-50">
+    <header className="bg-yellow-300 shadow-md sticky top-0 z-50 select-none">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
         <img src={'/logo.webp'} alt="Logo Autoescola Lucky" className="h-16 w-auto" />
         <div className="hidden md:flex items-center space-x-6">

@@ -1,7 +1,7 @@
 import { FaCheckCircle } from "react-icons/fa";
 
 export const Training = () => (
-  <section id="habilitados" className="py-20 bg-white">
+  <section id="habilitados" className="py-20 bg-white select-none">
     <div className="container mx-auto px-6 flex flex-wrap items-center">
       <div className="w-full md:w-1/2 md:pr-10 mb-10 md:mb-0">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Já tem CNH mas não dirige?</h2>
