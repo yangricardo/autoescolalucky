@@ -21,7 +21,7 @@ export const ContactInfoItem = ({
                 <p className="font-bold text-lg text-white group-hover:text-yellow-300">
                     {title}
                 </p>
-                <p className="text-blue-200">{children}</p>
+                <p className="text-blue-100">{children}</p>
             </div>
         </div>
     );
