@@ -7,7 +7,7 @@ export const Contact = () => (
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Entre em Contato</h2>
       <div className="flex flex-wrap -mx-4">
         <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
-          <div className="bg-lucky-blue text-white p-8 rounded-xl shadow-lg h-full">
+          <div className="bg-blue-800 text-white p-8 rounded-xl shadow-lg h-full">
             <h3 className="text-2xl font-bold mb-6">Fale conosco agora mesmo!</h3>
             <p className="text-blue-200 mb-8">Tire suas dúvidas ou agende sua matrícula. Nossa equipe está pronta para te atender.</p>
             <div className="space-y-6">

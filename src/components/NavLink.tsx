@@ -7,7 +7,7 @@ type NavLinkProps = {
 const NavLink = ({ href, children }: PropsWithChildren<NavLinkProps>) => (
   <a
     href={href}
-    className="font-semibold text-lucky-blue hover:text-blue-900 transition duration-300"
+    className="font-semibold text-blue-800 hover:text-blue-900 transition duration-300"
   >
     {children}
   </a>

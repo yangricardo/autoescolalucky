@@ -14,11 +14,11 @@ export const ContactInfoItem = ({
 }: ContactInfoItemProps) => {
     const content = (
         <div className="flex items-center group">
-            <div className="bg-white text-lucky-blue w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+            <div className="bg-white text-blue-800 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                 {icon}
             </div>
             <div>
-                <p className="font-bold text-lg text-white group-hover:text-lucky-yellow">
+                <p className="font-bold text-lg text-white group-hover:text-yellow-300">
                     {title}
                 </p>
                 <p className="text-blue-200">{children}</p>

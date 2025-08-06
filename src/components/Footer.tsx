@@ -2,7 +2,7 @@ import { FaInstagram, FaWhatsapp, FaFacebook, FaYoutube, FaTiktok } from "react-
 
 
 export const Footer = () => (
-  <footer className="bg-lucky-yellow text-lucky-blue">
+  <footer className="bg-yellow-300 text-blue-800">
     <div className="container mx-auto px-6 py-8 text-center">
       <div className="flex justify-center space-x-4 mb-4">
         <a href="https://instagram.com/autoescola_lucky" title="Instagram Autoescola Lucky" target="_blank" rel="noopener noreferrer" className="text-2xl text-pink-600 hover:text-pink-800 transition duration-300"><FaInstagram /></a>

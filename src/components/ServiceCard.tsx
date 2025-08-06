@@ -10,8 +10,8 @@ export const ServiceCard = ({
   title,
   children,
 }: ServiceCardProps) => (
-  <div className="bg-lucky-blue text-white p-8 rounded-xl shadow-lg text-center">
-    <div className="text-5xl text-lucky-yellow mb-4 mx-auto w-fit">
+  <div className="bg-blue-800 text-white p-8 rounded-xl shadow-lg text-center">
+    <div className="text-5xl text-yellow-300 mb-4 mx-auto w-fit">
       {icon}
     </div>
     <h3 className="text-2xl font-bold mb-3">{title}</h3>

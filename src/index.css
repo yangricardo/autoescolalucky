@@ -4,9 +4,6 @@
 @import "tailwindcss/utilities.css" layer(utilities);
 
 @theme {
-  --color-lucky-blue: '#0045b3';
-  --color-lucky-yellow: '#ffc400';
-  --color-lucky-bg: '#f9fafb';
   --font-family: 'Inter', sans-serif;
 }
 
