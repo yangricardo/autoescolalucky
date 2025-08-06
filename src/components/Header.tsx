@@ -22,18 +22,18 @@ export const Header = () =>
             className="h-16 w-auto hover:scale-110 transition-transform duration-300 group-hover:scale-110"
           />
         </button>
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-6">
           <NavLink href="#servicos">Serviços</NavLink>
           <NavLink href="#promocoes">Promoções</NavLink>
           <NavLink href="#habilitados">Aulas para Habilitados</NavLink>
           <NavLink href="#contato">Contato</NavLink>
         </div>
-        <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="hidden md:inline-block bg-blue-800 text-white hover:text-yellow-200 font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 hover:scale-110 transition duration-300">
+        <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="hidden lg:inline-block bg-blue-800 text-white hover:text-yellow-200 font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 hover:scale-110 transition duration-300">
           Fale Conosco
         </a>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden transition-transform duration-300"
+          className="lg:hidden transition-transform duration-300"
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
           <span
@@ -50,7 +50,7 @@ export const Header = () =>
       </nav>
       <div
         className={`
-          md:hidden overflow-hidden transition-all duration-300 ease-in-out
+          lg:hidden overflow-hidden transition-all duration-300 ease-in-out
           ${ isMenuOpen ? 'max-h-96 border-t border-yellow-500' : 'max-h-0' }
         `}
       >
