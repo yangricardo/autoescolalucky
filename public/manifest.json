@@ -12,13 +12,13 @@
   "categories": ["education", "automotive"],
   "icons": [
     {
-      "src": "/logo.jpeg",
+      "src": "/logo-square.webp",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo.webp",
+      "src": "/logo-square.webp",
       "sizes": "512x512",
       "type": "image/webp",
       "purpose": "any maskable"

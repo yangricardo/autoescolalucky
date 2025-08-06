@@ -43,7 +43,7 @@ export function SEOHead({
   title = 'Autoescola Lucky - Bangu, Rio de Janeiro',
   description = 'Autoescola Lucky em Bangu, Rio de Janeiro. Tire sua carteira de motorista com segurança e confiança. Oferecemos aulas para Categoria B.',
   keywords = 'autoescola, bangu, rio de janeiro, cnh, carteira de motorista, habilitação, aulas de direção, categoria b',
-  image = '/logo.webp',
+  image = '/logo-square.webp',
   url = 'https://autoescolalucky.com.br',
 }: SEOHeadProps) {
   useEffect(() => {
