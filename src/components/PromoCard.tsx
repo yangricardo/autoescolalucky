@@ -19,7 +19,7 @@ export const PromoCard = ({
   priceDetails,
   options,
 }: PromoCardProps) => (
-  <div className="bg-blue-800 text-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center h-full group select-none  hover:shadow-amber-200 hover:shadow-lg transition-shadow duration-300">
+  <div className="bg-secondary text-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center h-full group select-none  hover:shadow-amber-200 hover:shadow-lg transition-shadow duration-300">
     <h3 className="text-xl font-bold mb-2">{title}</h3>
     <div className="transition-transform duration-300 group-hover:scale-110 mb-2">
       {price}

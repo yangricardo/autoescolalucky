@@ -8,14 +8,14 @@ export const Training = () => (
         <p className="text-lg text-gray-600 mb-6">Chegou a hora de vencer o medo e dominar o volante com confiança! Oferecemos aulas para habilitados com o melhor instrutor do Rio.</p>
         <ul className="space-y-3 mb-8">
           <li className="flex items-center group">
-            <FaCheckCircle className="h-6 w-6 text-blue-800 mt-1 mr-3 flex-shrink-0 group-hover:text-yellow-400 group-hover:scale-110 transition-transform duration-300" />
+            <FaCheckCircle className="h-6 w-6 text-secondary mt-1 mr-3 flex-shrink-0 group-hover:text-yellow-400 group-hover:scale-110 transition-transform duration-300" />
             <span><strong>Prática Real:</strong> Enfrente situações reais do trânsito.</span>
           </li>
-          <li className="flex items-center group"><FaCheckCircle className="h-6 w-6 text-blue-800 mt-1 mr-3 flex-shrink-0 group-hover:text-yellow-400 group-hover:scale-110 transition-transform duration-300" /><span><strong>Atendimento Humanizado:</strong> Respeitamos seu tempo e seus medos.</span></li>
-          <li className="flex items-center group"><FaCheckCircle className="h-6 w-6 text-blue-800 mt-1 mr-3 flex-shrink-0 group-hover:text-yellow-400 group-hover:scale-110 transition-transform duration-300" /><span><strong>Evolução de Verdade:</strong> Sinta sua confiança aumentar a cada aula.</span></li>
+          <li className="flex items-center group"><FaCheckCircle className="h-6 w-6 text-secondary mt-1 mr-3 flex-shrink-0 group-hover:text-yellow-400 group-hover:scale-110 transition-transform duration-300" /><span><strong>Atendimento Humanizado:</strong> Respeitamos seu tempo e seus medos.</span></li>
+          <li className="flex items-center group"><FaCheckCircle className="h-6 w-6 text-secondary mt-1 mr-3 flex-shrink-0 group-hover:text-yellow-400 group-hover:scale-110 transition-transform duration-300" /><span><strong>Evolução de Verdade:</strong> Sinta sua confiança aumentar a cada aula.</span></li>
         </ul>
-        <div className="bg-yellow-100 border-l-4 border-yellow-300 p-4 rounded-r-lg">
-          <p className="text-xl font-bold">Pacotes a partir de <span className="text-blue-800 text-3xl">R$79,90</span> por aula.</p>
+        <div className="bg-yellow-100 border-l-4 border-primary p-4 rounded-r-lg">
+          <p className="text-xl font-bold">Pacotes a partir de <span className="text-secondary text-3xl">R$79,90</span> por aula.</p>
         </div>
       </div>
       <div className="w-full lg:w-1/2">
@@ -31,7 +31,7 @@ export const Training = () => (
             href="https://unsplash.com/pt-br/fotografias/duas-pessoas-que-andam-de-veiculo-durante-o-dia-_c7haaSAcIg"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-blue-800"
+            className="underline hover:text-secondary"
           >
             Tim Foster no Unsplash
           </a>

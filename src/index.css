@@ -6,3 +6,8 @@
     @apply scroll-smooth;
   }
 }
+
+@theme {
+  --color-primary: #FEE505;
+  --color-secondary: #004BAC;
+}

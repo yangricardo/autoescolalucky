@@ -23,11 +23,11 @@ export const ContactInfoItem = ({
 
     const content = (
         <div className="flex items-center group">
-            <div className="bg-white group-hover:bg-yellow-300 text-blue-800 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-all duration-200 group-hover:scale-110">
+            <div className="bg-white group-hover:bg-primary text-secondary w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0 transition-all duration-200 group-hover:scale-110">
                 {icon}
             </div>
             <div>
-                <p className="font-bold text-base md:text-lg text-white group-hover:text-yellow-300 break-all">
+                <p className="font-bold text-base md:text-lg text-white group-hover:text-primary break-all">
                     {title}
                 </p>
                 <p className="text-blue-100">{children}</p>

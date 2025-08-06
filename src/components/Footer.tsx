@@ -3,7 +3,7 @@ import { trackEvent } from "../utils/analytics";
 
 
 export const Footer = () => (
-  <footer className="bg-yellow-300 text-blue-800 select-none">
+  <footer className="bg-primary text-secondary select-none">
     <div className="container mx-auto px-6 py-8 text-center">
       <div className="flex justify-center space-x-4 mb-4">
         <a href="https://instagram.com/autoescola_lucky" title="Instagram Autoescola Lucky" target="_blank" rel="noopener noreferrer" className="text-3xl text-pink-600 hover:text-pink-800 hover:scale-125 transition duration-300" onClick={() => trackEvent('click_social', 'Footer', 'Instagram 1')}><FaInstagram /></a>

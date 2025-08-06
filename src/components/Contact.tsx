@@ -2,13 +2,13 @@ import { FaClock, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import { ContactInfoItem } from "./ContactInfoItem";
 
 export const Contact = () => (
-  <section id="contato" className="bg-blue-50 py-20">
+  <section id="contato" className="bg-slate-50 py-20">
     <div className="container mx-auto px-6">
       <h2 className="text-3xl lg:text-4xl font-bold text-center mb-12 select-none">Fale Conosco</h2>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden p-4">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
-            <div className="bg-blue-800 text-white p-8 rounded-xl shadow-lg h-full hover:shadow-amber-200 hover:shadow-lg transition-shadow duration-300">
+            <div className="bg-secondary text-white p-10 rounded-xl shadow-lg h-full hover:shadow-amber-200 hover:shadow-lg transition-shadow duration-300">
               <h3 className="text-2xl font-bold mb-6">Tire suas dúvidas ou agende sua matrícula.</h3>
               <p className="text-blue-100 mb-8">Nossa equipe está pronta para te atender.</p>
               <div className="flex flex-col space-y-6">

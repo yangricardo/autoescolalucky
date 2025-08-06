@@ -8,7 +8,7 @@ export const Header = () =>
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-yellow-300 min-w-[320px] shadow-md sticky top-0 z-50 select-none">
+    <header className="bg-primary min-w-[320px] shadow-md sticky top-0 z-50 select-none">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
         <button
           type="button"
@@ -28,7 +28,7 @@ export const Header = () =>
           <NavLink href="#habilitados">Aulas para Habilitados</NavLink>
           <NavLink href="#contato">Contato</NavLink>
         </div>
-        <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="hidden lg:inline-block bg-blue-800 text-white hover:text-yellow-200 font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 hover:scale-110 transition duration-300">
+        <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="hidden lg:inline-block bg-secondary text-white hover:text-yellow-200 font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 hover:scale-110 transition duration-300">
           Fale Conosco
         </a>
         <button
@@ -41,9 +41,9 @@ export const Header = () =>
               }`}
           >
             {isMenuOpen ? (
-              <FaX className="h-8 w-8 text-blue-800" />
+              <FaX className="h-8 w-8 text-secondary" />
             ) : (
-              <FaBars className="h-8 w-8 text-blue-800" />
+              <FaBars className="h-8 w-8 text-secondary" />
             )}
           </span>
         </button>
@@ -54,12 +54,12 @@ export const Header = () =>
           ${ isMenuOpen ? 'max-h-96 border-t border-yellow-500' : 'max-h-0' }
         `}
       >
-        <div className="bg-yellow-300 px-6 pb-4 pt-2 flex flex-col">
-          <a href="#servicos" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Serviços</a>
-          <a href="#promocoes" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Promoções</a>
-          <a href="#habilitados" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Aulas para Habilitados</a>
-          <a href="#contato" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Contato</a>
-          <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block w-full text-center bg-blue-800 text-white hover:text-yellow-200 font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 transition duration-300" onClick={() => trackEvent('click_social', 'Header', 'Fale Conosco')}>
+        <div className="bg-primary px-6 pb-4 pt-2 flex flex-col">
+          <a href="#servicos" className="block py-2 font-semibold text-secondary hover:text-blue-900">Serviços</a>
+          <a href="#promocoes" className="block py-2 font-semibold text-secondary hover:text-blue-900">Promoções</a>
+          <a href="#habilitados" className="block py-2 font-semibold text-secondary hover:text-blue-900">Aulas para Habilitados</a>
+          <a href="#contato" className="block py-2 font-semibold text-secondary hover:text-blue-900">Contato</a>
+          <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block w-full text-center bg-secondary text-white hover:text-yellow-200 font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 transition duration-300" onClick={() => trackEvent('click_social', 'Header', 'Fale Conosco')}>
             Fale Conosco
           </a>
         </div>
