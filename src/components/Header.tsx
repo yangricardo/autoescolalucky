@@ -10,7 +10,18 @@ export const Header = () =>
   return (
     <header className="bg-yellow-300 shadow-md sticky top-0 z-50 select-none">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-        <img src={'/logo.webp'} alt="Logo Autoescola Lucky" className="h-16 w-auto" />
+        <button
+          type="button"
+          className="group flex items-center focus:outline-none"
+          aria-label="Voltar ao topo"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <img
+            src={'/logo.webp'}
+            alt="Logo Autoescola Lucky"
+            className="h-16 w-auto hover:scale-110 transition-transform duration-300 group-hover:scale-110"
+          />
+        </button>
         <div className="hidden md:flex items-center space-x-6">
           <NavLink href="#servicos">Serviços</NavLink>
           <NavLink href="#promocoes">Promoções</NavLink>
@@ -26,9 +37,8 @@ export const Header = () =>
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
           <span
-            className={`inline-block transition-transform duration-300 ${
-              isMenuOpen ? "rotate-90 scale-110" : "rotate-0 scale-100"
-            }`}
+            className={`inline-block transition-transform duration-300 ${ isMenuOpen ? "rotate-90 scale-110" : "rotate-0 scale-100"
+              }`}
           >
             {isMenuOpen ? (
               <FaX className="h-8 w-8 text-blue-800" />
@@ -41,7 +51,7 @@ export const Header = () =>
       <div
         className={`
           md:hidden overflow-hidden transition-all duration-300 ease-in-out
-          ${isMenuOpen ? 'max-h-96 border-t border-yellow-500' : 'max-h-0'}
+          ${ isMenuOpen ? 'max-h-96 border-t border-yellow-500' : 'max-h-0' }
         `}
       >
         <div className="bg-yellow-300 px-6 pb-4 pt-2 flex flex-col">
