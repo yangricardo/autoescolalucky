@@ -34,7 +34,7 @@ export const Contact = () => (
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.0904757766475!2d-43.46839203804269!3d-22.873115936584185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdf92c7152b55%3A0xbc908783ba0548e2!2sAUTO%20ESCOLA%20LUCKY!5e0!3m2!1spt-BR!2sbr!4v1752721467121!5m2!1spt-BR!2sbr"
               title="Localização da Autoescola Lucky no Google Maps"
-              className="w-full h-[450px] border-0"
+              className="w-full h-[500px] border-0"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
             />
