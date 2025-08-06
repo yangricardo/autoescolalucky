@@ -1,4 +1,12 @@
-function ContactItem({ icon, iconBgColor, children }) {
+import { ReactNode } from "react";
+
+type ContactItemProps = {
+  icon: ReactNode;
+  iconBgColor: string;
+  children: ReactNode;
+};
+
+function ContactItem({ icon, iconBgColor, children }: ContactItemProps) {
   return (
     <div className='flex items-center space-x-3'>
       <div className={`w-8 h-8 ${iconBgColor} rounded-full flex items-center justify-center`}>
