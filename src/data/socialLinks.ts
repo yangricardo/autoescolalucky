@@ -1,4 +1,12 @@
-export const socialLinks = [
+export type SocialLinkProps = {
+  href: string;
+  className: string;
+  'aria-label': string;
+  path: string;
+  srText: string;
+}
+
+export const socialLinks: SocialLinkProps[] = [
   {
     href: 'https://www.instagram.com/lucky_autoescola',
     className: 'text-pink-600 hover:text-pink-800 transition-colors',
