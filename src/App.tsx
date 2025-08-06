@@ -1,11 +1,12 @@
-import { SocialMedia } from './SocialMedia';
-import { Footer } from './Footer';
-import { ContactItem } from './ContactItem';
-import { SEOHead } from './SEOHead';
-import { trackWhatsAppClick } from './analytics';
+import { trackWhatsAppClick } from "./analytics";
+import { ContactItem } from "./ContactItem";
+import { Footer } from "./Footer";
+import { SEOHead } from "./SEOHead";
+import { SocialMedia } from "./SocialMedia";
+
 
 function App() {
-  const handleWhatsAppClick = (phoneNumber) => {
+  const handleWhatsAppClick = (phoneNumber: string) => {
     trackWhatsAppClick(phoneNumber);
   };
   return (
@@ -123,7 +124,7 @@ function App() {
                     width="100%"
                     height="200"
                     style={{ border: 0 }}
-                    allowFullScreen=""
+                    allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className='rounded-md mt-2'
@@ -170,5 +171,3 @@ function App() {
     </>
   );
 }
-
-export default App;
