@@ -22,8 +22,8 @@ export const Contact = () => (
               </ContactInfoItem>
               <ContactInfoItem icon={<FaClock className="text-xl" />} title="Horário de Funcionamento">
                 <div className="space-y-1">
-                  <div>Segunda a Sexta: 8h às 18h</div>
-                  <div>Sábado: 8h às 12h</div>
+                  <div>Segunda a Sexta: 8h às 20h</div>
+                  <div>Sábado: 8h às 13h</div>
                 </div>
               </ContactInfoItem>
             </div>
