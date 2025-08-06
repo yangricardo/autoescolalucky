@@ -19,7 +19,23 @@ export const Training = () => (
         </div>
       </div>
       <div className="w-full md:w-1/2">
-        <img src="https://placehold.co/600x400/0045b3/ffffff?text=Vença+o+medo+de+dirigir" alt="Mulher feliz dirigindo um carro" className="rounded-lg shadow-xl w-full h-auto" />
+        <img
+          src="/image-car.webp"
+          alt="Motorista recebendo orientação"
+          title="Motorista recebendo orientação"
+          className="rounded-xl shadow-xl w-full h-auto hover:shadow-lg hover:shadow-blue-200 transition-shadow duration-300"
+        />
+        <p className="text-xs text-gray-400 mt-2 text-right">
+          Foto por{" "}
+          <a
+            href="https://unsplash.com/pt-br/fotografias/duas-pessoas-que-andam-de-veiculo-durante-o-dia-_c7haaSAcIg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-blue-800"
+          >
+            Tim Foster no Unsplash
+          </a>
+        </p>
       </div>
     </div>
   </section>
