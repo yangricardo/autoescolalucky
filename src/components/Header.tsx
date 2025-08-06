@@ -8,7 +8,7 @@ export const Header = () =>
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-yellow-300 shadow-md sticky top-0 z-50 select-none">
+    <header className="bg-yellow-300 min-w-[320px] shadow-md sticky top-0 z-50 select-none">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
         <button
           type="button"

@@ -10,18 +10,18 @@ import { Training } from "./components/Training";
 function App ()
 {
   return (
-    <>
+    <div>
       <SEOHead />
       <Header />
-      <main>
-        <Hero />
-        <Services />
-        <Promotions />
-        <Training />
-        <Contact />
+      <main className="flex-grow">
+      <Hero />
+      <Services />
+      <Promotions />
+      <Training />
+      <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

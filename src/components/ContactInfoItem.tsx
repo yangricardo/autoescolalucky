@@ -27,7 +27,7 @@ export const ContactInfoItem = ({
                 {icon}
             </div>
             <div>
-                <p className="font-bold text-lg text-white group-hover:text-yellow-300">
+                <p className="font-bold text-base md:text-lg text-white group-hover:text-yellow-300 break-all">
                     {title}
                 </p>
                 <p className="text-blue-100">{children}</p>
