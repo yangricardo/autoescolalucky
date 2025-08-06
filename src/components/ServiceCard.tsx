@@ -10,7 +10,7 @@ export const ServiceCard = ({
   title,
   children,
 }: ServiceCardProps) => (
-  <div className="bg-secondary text-white p-8 rounded-xl shadow-lg text-center group hover:shadow-amber-200 hover:shadow-lg transition-shadow duration-300">
+  <div className="bg-secondary text-white p-8 rounded-2xl shadow-lg text-center group hover:shadow-amber-200 hover:shadow-lg transition-shadow duration-300">
     <div className="text-5xl text-primary mb-4 mx-auto w-fit transition-transform duration-300 group-hover:scale-125">
       {icon}
     </div>

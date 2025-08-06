@@ -23,7 +23,7 @@ export const Training = () => (
           src="/image-car.webp"
           alt="Motorista recebendo orientação"
           title="Motorista recebendo orientação"
-          className="rounded-xl shadow-xl w-full h-auto hover:shadow-lg hover:shadow-blue-200 transition-shadow duration-300"
+          className="rounded-2xl shadow-xl w-full h-auto hover:shadow-lg hover:shadow-blue-200 transition-shadow duration-300"
         />
         <p className="text-xs text-gray-400 mt-2 text-right">
           Foto por{" "}
