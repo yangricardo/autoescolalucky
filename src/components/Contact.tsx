@@ -9,11 +9,11 @@ export const Contact = () => (
         <div className="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
           <div className="bg-blue-800 text-white p-8 rounded-xl shadow-lg h-full">
             <h3 className="text-2xl font-bold mb-6">Fale conosco agora mesmo!</h3>
-            <p className="text-blue-200 mb-8">Tire suas dúvidas ou agende sua matrícula. Nossa equipe está pronta para te atender.</p>
-            <div className="space-y-6">
+            <p className="text-blue-100 mb-8">Tire suas dúvidas ou agende sua matrícula. Nossa equipe está pronta para te atender.</p>
+            <div className="flex flex-col space-y-6">
               <ContactInfoItem href="https://wa.me/5521965404054" icon={<FaWhatsapp className="text-2xl" />} title="(21) 96540-4054">Clique para chamar no WhatsApp</ContactInfoItem>
-              <ContactInfoItem href="https://wa.me/5521964097010" icon={<FaWhatsapp className="text-xl" />} title="(21) 96409-7010">Clique para chamar no WhatsApp</ContactInfoItem>
-              <ContactInfoItem icon={<FaMapMarkerAlt className="text-xl" />} title="Nosso Endereço">Rua Iguaçu, 35 - Centro de Bangu, Rio de Janeiro - RJ</ContactInfoItem>
+              <ContactInfoItem href="https://wa.me/5521964097010" icon={<FaWhatsapp className="text-2xl" />} title="(21) 96409-7010">Clique para chamar no WhatsApp</ContactInfoItem>
+              <ContactInfoItem href="https://www.google.com/maps?ll=-22.873093,-43.465822&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=13587509075608160482" icon={<FaMapMarkerAlt className="text-xl" />} title="Nosso Endereço">Rua Iguaçu, 35 - Centro de Bangu, Rio de Janeiro - RJ</ContactInfoItem>
               <ContactInfoItem href="https://instagram.com/autoescola_lucky" icon={<FaInstagram className="text-2xl" />} title="@autoescola_lucky">Siga-nos no Instagram</ContactInfoItem>
             </div>
           </div>
