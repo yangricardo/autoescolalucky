@@ -17,7 +17,7 @@ export const Header = () =>
           <NavLink href="#habilitados">Aulas para Habilitados</NavLink>
           <NavLink href="#contato">Contato</NavLink>
         </div>
-        <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="hidden md:inline-block bg-blue-800 text-white font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 transition duration-300">
+        <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="hidden md:inline-block bg-blue-800 text-white font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 hover:scale-110 transition duration-300">
           Fale Conosco
         </a>
         <button
