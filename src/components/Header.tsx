@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
 import { FaBars, FaX } from "react-icons/fa6";
+import { trackEvent } from "../utils/analytics";
 
 export const Header = () =>
 {
@@ -48,7 +49,7 @@ export const Header = () =>
           <a href="#promocoes" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Promoções</a>
           <a href="#habilitados" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Aulas para Habilitados</a>
           <a href="#contato" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Contato</a>
-          <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block w-full text-center bg-blue-800 text-white font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 transition duration-300">
+          <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block w-full text-center bg-blue-800 text-white font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 transition duration-300" onClick={() => trackEvent('click_social', 'Header', 'Fale Conosco')}>
             Fale Conosco
           </a>
         </div>
