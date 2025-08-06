@@ -13,13 +13,19 @@ export const Contact = () => (
             <div className="flex flex-col space-y-6">
               <ContactInfoItem href="https://wa.me/5521965404054" icon={<FaWhatsapp className="text-2xl" />} title="(21) 96540-4054">Clique para chamar no WhatsApp</ContactInfoItem>
               <ContactInfoItem href="https://wa.me/5521964097010" icon={<FaWhatsapp className="text-2xl" />} title="(21) 96409-7010">Clique para chamar no WhatsApp</ContactInfoItem>
+              <ContactInfoItem
+                href="mailto:contato@autoescolalucky.com.br"
+                icon={<FaMapMarkerAlt className="text-2xl" />}
+                title="contato@autoescolalucky.com.br"
+              >
+                Envie um e-mail
+              </ContactInfoItem>
               <ContactInfoItem icon={<FaClock className="text-xl" />} title="Horário de Funcionamento">
                 <div className="space-y-1">
                   <div>Segunda a Sexta: 8h às 18h</div>
                   <div>Sábado: 8h às 12h</div>
                 </div>
               </ContactInfoItem>
-              <ContactInfoItem href="https://www.google.com/maps?ll=-22.873093,-43.465822&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=13587509075608160482" icon={<FaMapMarkerAlt className="text-xl" />} title="Nosso Endereço">Rua Iguaçu, 35 - Centro de Bangu<br/>Rio de Janeiro - RJ</ContactInfoItem>              
             </div>
           </div>
         </div>
