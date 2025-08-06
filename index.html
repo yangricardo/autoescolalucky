@@ -42,13 +42,16 @@
     />
     <meta
       name="keywords"
-      content="autoescola, CNH, carteira de motorista, aulas de direção, Bangu, Rio de Janeiro, habilitação, primeira habilitação, reciclagem CNH"
+      content="autoescola, CFC, auto escola, CNH, CNH A, CNH B, carteira de motorista, aulas de direção, Bangu, Realengo, Padre Miguel, Zona Oeste, Rio de Janeiro, habilitação, primeira habilitação, adição de categoria, reciclagem CNH, aulas para habilitados, processo de habilitação, DETRAN RJ, preço CNH,  Instrutor Diogo Reis, aulas com Diogo Reis"
     />
-    <meta name="author" content="Autoescola Lucky" />
+    <meta name="publisher" content="Autoescola Lucky" />
+    <meta name="developer" content="Yang Miranda - https://yang.dev.br" />    
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
+    
+    <!-- Developer -->
+    <link rel="author" href="https://yang.dev.br" />
 
-    <!-- Canonical URL -->
     <!-- Canonical URL -->
     <link rel="canonical" href="https://autoescolalucky.com.br/" />
 
@@ -122,15 +125,19 @@
         "@context": "https://schema.org",
         "@type": "DrivingSchool",
         "name": "Autoescola Lucky",
-        "description": "Autoescola em Bangu, Rio de Janeiro, oferecendo aulas teóricas e práticas para obtenção da CNH com segurança e confiança.",
+        "description": "Autoescola em Bangu, Rio de Janeiro. Tire sua CNH com segurança e confiança. Aulas teóricas e práticas, instrutores qualificados e o melhor preço da Zona Oeste.",
         "url": "https://autoescolalucky.com.br/",
         "logo": "https://autoescolalucky.com.br/logo-square.webp",
         "image": "https://autoescolalucky.com.br/logo-square.webp",
         "telephone": ["+5521964097010", "+5521964694925"],
+        "priceRange": "$$",
+        "openingHours": "Mo-Fr 08:00-20:00, Sa 08:00-13:00",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Rua Francisco Real, 1950 - Loja B",
           "addressLocality": "Bangu",
           "addressRegion": "RJ",
+          "postalCode": "21810-042",
           "addressCountry": "BR"
         },
         "geo": {
@@ -147,16 +154,63 @@
           },
           "geoRadius": "10000"
         },
-        "serviceType": [
-          "Primeira Habilitação",
-          "Reciclagem CNH",
-          "Aulas Teóricas",
-          "Aulas Práticas",
-          "Aulas Para Habilitados",
-          "Simulado DETRAN"
+        "publisher": {
+          "@type": "Organization",
+          "name": "Autoescola Lucky",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://autoescolalucky.com.br/logo-square.webp"
+          }
+        },
+        "contributor": [
+          {
+            "@type": "Person",
+            "name": "Yang Miranda",
+            "url": "https://yang.dev.br",
+            "jobTitle": "Desenvolvedor Web",
+            "sameAs": "https://www.linkedin.com/in/yangricardo"
+          },
+          {
+            "@type": "Person",
+            "name": "Diogo Reis",
+            "jobTitle": "Instrutor de Direção",
+            "sameAs": "https://www.instagram.com/lucky_autoescola/"
+          }
         ],
-        "priceRange": "$$",
-        "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-12:00"
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços de Habilitação",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Primeira Habilitação (CNH A e B)"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Adição de Categoria (A ou B)"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Reciclagem de CNH"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Aulas para Habilitados"
+              }
+            }
+          ]
+        }
       }
     </script>
 
