@@ -37,8 +37,13 @@ export const Header = () =>
           </span>
         </button>
       </nav>
-      {isMenuOpen && (
-        <div className="md:hidden bg-yellow-300 border-t border-yellow-500 px-6 pb-4">
+      <div
+        className={`
+          md:hidden overflow-hidden transition-all duration-300 ease-in-out
+          ${isMenuOpen ? 'max-h-96 border-t border-yellow-500' : 'max-h-0'}
+        `}
+      >
+        <div className="bg-yellow-300 px-6 pb-4 pt-2 flex flex-col">
           <a href="#servicos" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Serviços</a>
           <a href="#promocoes" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Promoções</a>
           <a href="#habilitados" className="block py-2 font-semibold text-blue-800 hover:text-blue-900">Aulas para Habilitados</a>
@@ -47,7 +52,7 @@ export const Header = () =>
             Fale Conosco
           </a>
         </div>
-      )}
+      </div>
     </header>
   );
 };
