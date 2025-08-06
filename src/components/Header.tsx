@@ -19,12 +19,22 @@ export const Header = () =>
         <a href="https://wa.me/5521965404054" target="_blank" rel="noopener noreferrer" className="hidden md:inline-block bg-blue-800 text-white font-bold py-2 px-5 rounded-lg hover:bg-opacity-90 transition duration-300">
           Fale Conosco
         </a>
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
-          {isMenuOpen ? (
-            <FaX className="h-8 w-8 text-blue-800" />
-          ) : (
-            <FaBars className="h-8 w-8 text-blue-800" />
-          )}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden transition-transform duration-300"
+          aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+        >
+          <span
+            className={`inline-block transition-transform duration-300 ${
+              isMenuOpen ? "rotate-90 scale-110" : "rotate-0 scale-100"
+            }`}
+          >
+            {isMenuOpen ? (
+              <FaX className="h-8 w-8 text-blue-800" />
+            ) : (
+              <FaBars className="h-8 w-8 text-blue-800" />
+            )}
+          </span>
         </button>
       </nav>
       {isMenuOpen && (
