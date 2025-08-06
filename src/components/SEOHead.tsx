@@ -8,7 +8,7 @@ interface SEOHeadProps {
   url?: string;
 }
 
-const updateMetaTag = (
+export const updateMetaTag = (
   name: string,
   content: string,
   isProperty: boolean = false
@@ -26,7 +26,7 @@ const updateMetaTag = (
   }
 };
 
-const updateLinkTag = (rel: string, href: string): void => {
+export const updateLinkTag = (rel: string, href: string): void => {
   let element = document.querySelector<HTMLLinkElement>(`link[rel="${rel}"]`);
 
   if (element) {
@@ -39,31 +39,33 @@ const updateLinkTag = (rel: string, href: string): void => {
   }
 };
 
-export function SEOHead() {
-  return (
-    <>
-      <title>Autoescola Lucky - Bangu, Rio de Janeiro</title>
-      <meta
-        name='description'
-        content='Autoescola Lucky em Bangu, Rio de Janeiro. Tire sua carteira de motorista com segurança e confiança. Oferecemos aulas para Categoria B.'
-      />
-      <meta
-        name='keywords'
-        content='autoescola, bangu, rio de janeiro, cnh, carteira de motorista, habilitação, aulas de direção, categoria b'
-      />
-      <meta name='author' content='Autoescola Lucky' />
-      <meta
-        property='og:title'
-        content='Autoescola Lucky - Bangu, Rio de Janeiro'
-      />
-      <meta
-        property='og:description'
-        content='Tire sua CNH com a melhor autoescola de Bangu. Aulas práticas e teóricas com instrutores qualificados.'
-      />
-      <meta property='og:image' content='/logo.webp' />
-      <meta property='og:url' content='https://autoescolalucky.com.br' />
-      <meta property='og:type' content='website' />
-      <link rel='canonical' href='https://autoescolalucky.com.br' />
-    </>
-  );
+export function SEOHead({
+  title = 'Autoescola Lucky - Bangu, Rio de Janeiro',
+  description = 'Autoescola Lucky em Bangu, Rio de Janeiro. Tire sua carteira de motorista com segurança e confiança. Oferecemos aulas para Categoria B.',
+  keywords = 'autoescola, bangu, rio de janeiro, cnh, carteira de motorista, habilitação, aulas de direção, categoria b',
+  image = '/logo.webp',
+  url = 'https://autoescolalucky.com.br',
+}: SEOHeadProps) {
+  useEffect(() => {
+    document.title = title;
+    updateMetaTag('description', description);
+    updateMetaTag('keywords', keywords);
+    updateMetaTag('author', 'Autoescola Lucky');
+    updateMetaTag(
+      'og:title',
+      title,
+      true
+    );
+    updateMetaTag(
+      'og:description',
+      'Tire sua CNH com a melhor autoescola de Bangu. Aulas práticas e teóricas com instrutores qualificados.',
+      true
+    );
+    updateMetaTag('og:image', image, true);
+    updateMetaTag('og:url', url, true);
+    updateMetaTag('og:type', 'website', true);
+    updateLinkTag('canonical', url);
+  }, [title, description, keywords, image, url]);
+
+  return null;
 }
