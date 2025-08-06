@@ -8,7 +8,7 @@ export function SocialLink(props: Readonly<SocialLinkProps>) {
       target='_blank'
       rel='noopener noreferrer'
       aria-label={props['aria-label']}
-      className='text-gray-500 hover:text-blue-600 transition-colors'
+      className={props.className ?? 'text-gray-500 hover:text-blue-600 transition-colors'}
     >
       <SocialIcon path={props.path} />
     </a>
