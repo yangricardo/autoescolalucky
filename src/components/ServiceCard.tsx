@@ -15,6 +15,6 @@ export const ServiceCard = ({
       {icon}
     </div>
     <h3 className="text-2xl font-bold mb-3">{title}</h3>
-    <p className="text-blue-200">{children}</p>
+    <p className="text-blue-100">{children}</p>
   </div>
 );
