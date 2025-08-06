@@ -2,6 +2,13 @@
 // Add your Google Analytics ID here when ready
 const GA_TRACKING_ID = 'G-2EQDN5SLRR'; // Replace with your actual GA4 measurement ID
 
+declare global {
+  interface Window {
+    dataLayer?: any[];
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 // Google Analytics 4 setup
 export const initGA = () => {
   if (typeof window !== 'undefined' && GA_TRACKING_ID) {
@@ -13,8 +20,10 @@ export const initGA = () => {
 
     // Initialize gtag
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
+    function gtag(...args: any[]) {
+      if (window.dataLayer) {
+        window.dataLayer.push(args);
+      }
     }
     window.gtag = gtag;
     
@@ -27,7 +36,7 @@ export const initGA = () => {
 };
 
 // Track page views
-export const trackPageView = (url, title) => {
+export const trackPageView = (url: string, title: string) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('config', GA_TRACKING_ID, {
       page_title: title,
@@ -37,7 +46,7 @@ export const trackPageView = (url, title) => {
 };
 
 // Track events
-export const trackEvent = (action, category = 'General', label = '', value = 0) => {
+export const trackEvent = (action: string, category = 'General', label = '', value = 0) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', action, {
       event_category: category,
@@ -48,12 +57,12 @@ export const trackEvent = (action, category = 'General', label = '', value = 0) 
 };
 
 // Track phone calls
-export const trackPhoneCall = (phoneNumber) => {
+export const trackPhoneCall = (phoneNumber: string) => {
   trackEvent('phone_call', 'Contact', phoneNumber);
 };
 
 // Track WhatsApp clicks
-export const trackWhatsAppClick = (phoneNumber) => {
+export const trackWhatsAppClick = (phoneNumber: string) => {
   trackEvent('whatsapp_click', 'Contact', phoneNumber);
 };
 
