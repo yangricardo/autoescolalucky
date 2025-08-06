@@ -23,7 +23,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:seo": "./build.sh",
-    "start": "yarn serve dist",
+    "start": "npx serve dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "yarn build",
