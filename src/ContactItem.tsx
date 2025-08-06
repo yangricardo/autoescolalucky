@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 
 type ContactItemProps = {
-  icon: ReactNode;
-  iconBgColor: string;
-  children: ReactNode;
+  readonly icon: ReactNode;
+  readonly iconBgColor: string;
+  readonly children: ReactNode;
 };
 
 function ContactItem({ icon, iconBgColor, children }: ContactItemProps) {
