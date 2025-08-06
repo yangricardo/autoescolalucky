@@ -3,8 +3,8 @@ import { FaCheckCircle } from "react-icons/fa";
 export const Training = () => (
   <section id="habilitados" className="py-20 bg-white select-none">
     <div className="container mx-auto px-6 flex flex-wrap items-center">
-      <div className="w-full md:w-1/2 md:pr-10 mb-10 md:mb-0">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Já tem CNH mas não dirige?</h2>
+      <div className="w-full lg:w-1/2 lg:pr-10 mb-10 lg:mb-0">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-4">Já tem CNH mas não dirige?</h2>
         <p className="text-lg text-gray-600 mb-6">Chegou a hora de vencer o medo e dominar o volante com confiança! Oferecemos aulas para habilitados com o melhor instrutor do Rio.</p>
         <ul className="space-y-3 mb-8">
           <li className="flex items-center group">
@@ -18,7 +18,7 @@ export const Training = () => (
           <p className="text-xl font-bold">Pacotes a partir de <span className="text-blue-800 text-3xl">R$79,90</span> por aula.</p>
         </div>
       </div>
-      <div className="w-full md:w-1/2">
+      <div className="w-full lg:w-1/2">
         <img
           src="/image-car.webp"
           alt="Motorista recebendo orientação"
