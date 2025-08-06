@@ -1,9 +1,11 @@
 import type { ReactNode, PropsWithChildren } from 'react';
+import { trackEvent } from '../utils/analytics';
 
 type ContactInfoItemProps = PropsWithChildren<{
     icon: ReactNode;
     title: string;
     href?: string;
+    trackCategory?: string;
 }>;
 
 export const ContactInfoItem = ({
@@ -11,7 +13,14 @@ export const ContactInfoItem = ({
     title,
     children,
     href,
+    trackCategory,
 }: ContactInfoItemProps) => {
+    const handleClick = () => {
+        if (href && trackCategory) {
+            trackEvent(`click_${trackCategory}`, 'Contact', title);
+        }
+    };
+
     const content = (
         <div className="flex items-center group">
             <div className="bg-white text-blue-800 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -27,7 +36,17 @@ export const ContactInfoItem = ({
     );
 
     return href ? (
-        <a href={href} target="_blank" rel="noopener noreferrer">
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleClick}
+            title={
+                typeof children === 'string' || typeof children === 'number'
+                    ? `${title}: ${children}`
+                    : title
+            }
+        >
             {content}
         </a>
     ) : (
