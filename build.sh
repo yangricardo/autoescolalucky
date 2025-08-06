@@ -6,7 +6,7 @@
 echo "🏗️  Building Autoescola Lucky..."
 
 # Build the project
-npm run build
+yarn build
 
 # Update sitemap with current date
 current_date=$(date +%Y-%m-%d)
