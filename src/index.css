@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+  --color-lucky-blue: '#0045b3';
+  --color-lucky-yellow: '#ffc400';
+  --default-font-family: 'Inter', sans-serif;
+}
