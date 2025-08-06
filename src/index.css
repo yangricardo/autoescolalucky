@@ -6,13 +6,3 @@
 @theme {
   --font-family: 'Inter', sans-serif;
 }
-
-@layer components {
-  .whatsapp-button {
-    background-color: #25D366;
-    transition: transform 0.2s;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-}
