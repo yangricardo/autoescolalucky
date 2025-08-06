@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavLink from "./NavLink";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaX } from "react-icons/fa6";
 
 export const Header = () =>
 {
@@ -21,7 +21,7 @@ export const Header = () =>
         </a>
         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
           {isMenuOpen ? (
-            <FaTimes className="h-8 w-8 text-lucky-blue" />
+            <FaX className="h-8 w-8 text-lucky-blue" />
           ) : (
             <FaBars className="h-8 w-8 text-lucky-blue" />
           )}
